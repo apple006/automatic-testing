@@ -1,12 +1,8 @@
-FROM node:6
+FROM node
 
 EXPOSE 8000
 
 ADD ./ .
 USER root
 
-RUN npm install npm
-
-RUN npm install
-
-RUN npm run test
+RUN npm -g update npm & npm install & npm run test
