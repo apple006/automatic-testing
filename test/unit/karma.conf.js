@@ -6,8 +6,19 @@
 var webpackConfig = require('../../build/webpack.test.conf')
 // require('phantomjs-prebuilt').path = './node_modules/.bin/phantomjs'
 
+const isDocker = require('is-docker')()
 module.exports = function (config) {
   config.set({
+
+    customLaunchers: {
+      ChromeCustom: {
+        base: 'ChromeHeadless',
+        // We must disable the Chrome sandbox when running Chrome inside Docker (Chrome's sandbox needs
+        // more permissions than Docker allows by default)
+        flags: isDocker ? ['--no-sandbox'] : []
+      }
+    },
+
     // to run in additional browsers:
     // 1. install corresponding karma launcher
     //    http://karma-runner.github.io/0.13/config/browsers.html
