@@ -15,7 +15,7 @@ module.exports = {
       .assert.containsText('h1', 'Welcome to Your Vue.js App')
       .assert.elementCount('img', 1)
       .url(devServer + '/#/szm/')
-      .assert.containsText('h1', 'Hello!')
+      // .assert.containsText('h1', 'Hello!')
       .end()
   }
 }
