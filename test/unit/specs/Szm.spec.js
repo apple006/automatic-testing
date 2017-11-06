@@ -12,7 +12,7 @@ describe('Szm', () => {
     const defaultData = Szm.data()
     expect(defaultData.message).to.equal('Here is a test page')
   })
-  it('correctly sets the message hwen created', () => {
+  it('correctly sets the message when created', () => {
     expect(vm.message).to.equal('Hello!')
   })
   it('should render correct contents', () => {
