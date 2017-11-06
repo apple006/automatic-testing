@@ -11,5 +11,4 @@ describe('checkbox', () => {
   it('choose the second one', () => {
     expect(vm.picked).to.equal('Two')
   })
-
 })

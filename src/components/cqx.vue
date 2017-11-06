@@ -14,10 +14,10 @@
   export default {
     name: 'checkbox',
     data () {
-      return{
-        picked : 'Two'
+      return {
+        picked: 'Two'
       }
-      },
+    }
   }
 </script>
 
