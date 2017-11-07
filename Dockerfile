@@ -1,6 +1,6 @@
 FROM tenjaa/java-chrome-nodejs
 
-EXPOSE 8080
+EXPOSE 8088
 
 ADD ./ .
 USER root
@@ -10,4 +10,4 @@ USER root
 #RUN sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 #RUN apt-get update && apt-get install -y google-chrome-stable
 
-RUN npm -g update npm && npm install && npm update &&npm run test
+RUN npm -g update npm && npm install && npm update && npm run test
