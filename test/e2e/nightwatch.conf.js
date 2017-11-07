@@ -13,8 +13,8 @@ module.exports = {
     host: '127.0.0.1',
     port: 4444,
     cli_args: {
-      // 'webdriver.chrome.driver': require('chromedriver').path
-      'webdriver.chrome.driver': ""
+      'webdriver.chrome.driver': require('chromedriver').path
+      // 'webdriver.chrome.driver': ""
     }
   },
 
@@ -26,6 +26,12 @@ module.exports = {
       globals: {
         devServerURL: 'http://localhost:' + (process.env.PORT || config.dev.port)
       }
+    },
+
+    desiredCapabilities: {
+      browserName: 'chrome',
+      javascriptEnabled: true,
+      acceptSslCerts: true
     },
 
     chrome: {
