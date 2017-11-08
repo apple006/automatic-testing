@@ -8,6 +8,8 @@ module.exports = {
     const devServer = browser.globals.devServerURL
     console.log(devServer)
 
+    console.log(devServer+'/judson')
+
     browser
       .url(devServer + '/judson')
       .waitForElementVisible('#content', 5000)
