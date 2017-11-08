@@ -4,6 +4,7 @@ import MyFirst from '@/components/MyFirst'
 import HelloWorld from '@/components/HelloWorld'
 import Szm from '@/components/Szm'
 import SzmForm from '@/components/SzmForm'
+import checkbox from '@/components/cqx'
 
 Vue.use(Router)
 
@@ -29,7 +30,13 @@ export default new Router({
       path: '/szmform',
       name: 'SzmForm',
       component: SzmForm
+    },
+    {
+      path: '/cqx',
+      name: 'checkbox',
+      component: checkbox
     }
+
     // {
     //   path: '*',
     //   component: NotFoundComponent

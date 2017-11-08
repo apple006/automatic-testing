@@ -20,6 +20,17 @@
     }
   }
 </script>
+<style  lang="scss" scoped>
+  #example{
+  input{
+    width: 100%;
+    height: 20px
+
+  }
+  }
+
+
+  </style>
 
 
 

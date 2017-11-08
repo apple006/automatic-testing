@@ -1,7 +1,7 @@
 // For authoring Nightwatch tests, see
 // http://nightwatchjs.org/guide#usage
 module.exports = {
-  'default e2e tests': function (browser) {
+  'it blogs to cqx': function (browser) {
     // automatically uses dev Server port from /config.index.js
     // default: http://localhost:8080
     // see nightwatch.conf.js
@@ -11,11 +11,10 @@ module.exports = {
     browser
       .url(devServer)
       .waitForElementVisible('#example', 1000)
-      .assert.elementPresent('.hello')
-      .assert.containsText('h1', 'Welcome to Your Vue.js App')
-      .assert.elementCount('img', 1)
-      .url(devServer + '/#/szm/')
-      // .assert.containsText('h1', 'Hello!')
+      .url(devServer + '/#/cqx/')
+      .click('input[value="One"]')
+      .pause(1000)
+      .assert.containsText('#example', 'this is a text for test')
       .end()
   }
 }

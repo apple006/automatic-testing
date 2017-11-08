@@ -13,8 +13,8 @@ module.exports = {
     host: '127.0.0.1',
     port: 4444,
     cli_args: {
-      'webdriver.chrome.driver': require('chromedriver').path
-      //'webdriver.chrome.driver': ""
+      //'webdriver.chrome.driver': require('chromedriver').path
+      'webdriver.chrome.driver': "/Users/kaifa/WebstormProjects/automatic-testing/node_modules/chromedriver/lib/chromedriver/chromedriver"
     }
   },
 
@@ -33,7 +33,6 @@ module.exports = {
         browserName: 'chrome',
         javascriptEnabled: true,
         acceptSslCerts: true,
-        marionette:true
       }
     },
 
