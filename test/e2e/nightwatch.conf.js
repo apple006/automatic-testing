@@ -14,7 +14,6 @@ module.exports = {
     port: 4444,
     cli_args: {
       'webdriver.chrome.driver': require('chromedriver').path
-      //'webdriver.chrome.driver': "/Users/kaifa/WebstormProjects/automatic-testing/node_modules/chromedriver/lib/chromedriver/chromedriver"
     }
   },
 

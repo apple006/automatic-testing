@@ -1,4 +1,4 @@
-FROM node
+FROM node:8.9.0
 
 # Java Version
 ENV  JAVA_VERSION=9.0.1 \
