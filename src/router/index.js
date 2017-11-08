@@ -5,6 +5,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Szm from '@/components/Szm'
 import SzmForm from '@/components/SzmForm'
 import checkbox from '@/components/cqx'
+import MyTitle from '@/components/cqxCase'
 
 Vue.use(Router)
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/cqx',
       name: 'checkbox',
       component: checkbox
+    },
+    {
+      path: '/cqxCase',
+      name: 'MyTitle',
+      component: MyTitle
     }
 
     // {

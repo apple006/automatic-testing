@@ -10,11 +10,11 @@ module.exports = {
 
     browser
       .url(devServer)
-      .waitForElementVisible('#example', 1000)
-      .url(devServer + '/#/cqx/')
+      .waitForElementVisible('#app', 1000)
+      .url(devServer + '/cqx/')
       .click('input[value="One"]')
       .pause(1000)
-      .assert.containsText('#example', 'this is a text for test')
+      .assert.containsText('#example', 'Picked: One')
       .end()
   }
 }

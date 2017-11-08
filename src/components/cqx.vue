@@ -10,6 +10,7 @@
   </div>
 </template>
 
+
 <script>
   export default {
     name: 'checkbox',
@@ -22,12 +23,9 @@
 </script>
 <style  lang="scss" scoped>
   #example{
-  input{
-    width: 100%;
-    height: 20px
+    text-align: center;
+  }
 
-  }
-  }
 
 
   </style>
