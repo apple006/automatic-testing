@@ -30,10 +30,9 @@ module.exports = {
 
     chrome: {
       desiredCapabilities: {
-        browserName: 'chrome',
+        browserName: 'ChromeHeadless',
         javascriptEnabled: true,
-        acceptSslCerts: true,
-        marionette:true
+        acceptSslCerts: true
       }
     },
 
